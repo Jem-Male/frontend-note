@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter',sans-serif;
+}
+:root{
+    --dark: #000000;
+    --secondary: #7a7a7a;
+    --primary: #F5cc1c;
+    --light: #FFFFFF;
+    --body: #E6E6E6;
+    --danger: #ff0000;
+    --info: #1cb4f5;
+}
+.container{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+body{
+    background-color: var(--body);
+}
+.block{
+    padding: 20px 0;
+}
+.title{
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.cards-list{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.card-item{
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 10px;
+    display: flex;
+    transition: 0.3 sease-in-out;
+    background-color: var(--light);
+    justify-content: space-between;
+}
+.card-item.dark-theme{
+    background-color: var(--info);
+}
+.card-imem__title{
+    columns: var(--dark);
+    font-size: 15px;
+    font-weight: 800;
+}
+.card-item--date{
+    font-size: 12px;
+    color:var(--secondary);
+    font-weight: 400;
+}
+.card-item:hover{
+    background-color: var(--primary);
+}
+.fixed-bottom-right{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--light);
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+}
+.fixed-bottom-right:hover{
+    background-color: var(--primary);
+}
+.fiexd-top-left{
+    background-color: var(--light);
+    width: 72px;
+    height: 72px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+    transition: 0.3s ease-in-out;
+}
+.fiexd-top-left:hover{
+    background-color: var(--primary);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 35px;
+}
+.form-control{
+    border: none;
+    font-size: 14px;
+    color: var(--dark);
+    border-radius: 20px;
+    padding: 11px;
+}
+.form-control:focus{
+    outline: none;
+}
+.submit-primary-button{
+    cursor: pointer;
+    background-color: var(--primary);
+    color: var(--dark);
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+}
+.description{
+    font-size: 14px;
+    color: var(--secondary)
+}
+.fiexd-menu-buttom{
+    position: fixed;
+    bottom: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.delete-buton, .edit-buton, .add-buton{
+    width: 72px;
+    height: 72px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+}
+.delete-buton{
+    background-color: var(--danger);
+}
+.edit-buton{
+    background-color: var(--info);
+}
+.add-buton{
+    background-color: var(--primary);
+}
+.fixed-bottom-delete{
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    width: 90%;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--danger);
+    color: var(--light);
+    font-size: 20px;
+    font-weight: 500;
+}
+.triger{
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.divide{
+    margin: 15px;
+    text-decoration: none;
+    width: 100%;
+    color: var(--dark);
+}
+.center-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+.caed-name__title{
+    margin-bottom: 5px;
+}
+/* Светлая тема */
+body {
+    background-color: var(--body);
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Темная тема */
+body.dark-theme {
+    background-color: #121212;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+.trigerr{
+    width: 72px;
+    height: 72px;
+    border: none;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4)
+}
