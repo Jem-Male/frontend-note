@@ -2,7 +2,7 @@ export const handleToggle = async (itemId, currentStatus) => {
     const newStatus = !currentStatus;
 
     try {
-        const response = await fetch(`http://127.0.0.1:8000/api/v1/items/toggle_finished/${itemId}/`, {
+        const response = await fetch(`https://n0tes.pythonanywhere.com/api/v1/items/toggle_finished/${itemId}/`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
